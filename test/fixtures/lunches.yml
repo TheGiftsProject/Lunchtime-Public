@@ -1,0 +1,13 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  state: MyString
+  date: 2011-03-10
+  lunch_options: 
+  votes: 
+
+two:
+  state: MyString
+  date: 2011-03-10
+  lunch_options: 
+  votes: 

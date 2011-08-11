@@ -1,0 +1,14 @@
+#vote
+  != render :partial=>"toolbar"
+  %ul
+    - @lunch.lunch_options.shuffle.each do |lo|
+      != render :partial => "restaurant",:object=>lo.restaurant,:locals=>{:link=>vote_path('lo_id'=>lo.id)}
+  %ul.individual
+    %li
+      != link_to t("not_eating"),vote_path("not_eating"=>true)
+    %li
+      %span.timer{:style=>"text-align:center;",:title=>(@lunch.closing_time  - DateTime.now).seconds}
+  .info
+    %span!=t("voting_as",:user=>@user.name)
+- content_for :scripts do
+  :javascript

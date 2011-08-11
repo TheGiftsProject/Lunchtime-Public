@@ -1,0 +1,62 @@
+/* line 2, ../../app/stylesheets/lunchtime.scss */
+.restaurant {
+  overflow: hidden;
+}
+/* line 4, ../../app/stylesheets/lunchtime.scss */
+.restaurant .icon, .restaurant span {
+  float: left;
+}
+/* line 7, ../../app/stylesheets/lunchtime.scss */
+.restaurant .counter {
+  margin-top: 5px;
+}
+/* line 10, ../../app/stylesheets/lunchtime.scss */
+.restaurant span {
+  margin-left: 3px;
+  padding-top: 0;
+  margin-top: 7px;
+}
+
+/* line 19, ../../app/stylesheets/lunchtime.scss */
+.icon {
+  background: url('/images/icons.gif?1300558156') no-repeat;
+  width: 32px;
+  height: 32px;
+  overflow: hidden;
+}
+/* line 21, ../../app/stylesheets/lunchtime.scss */
+.icon {
+  background-position: 0px -64px;
+}
+/* line 22, ../../app/stylesheets/lunchtime.scss */
+.icon.italian {
+  background-position: 0px 0px;
+}
+/* line 23, ../../app/stylesheets/lunchtime.scss */
+.icon.burger {
+  background-position: -32px 0px;
+}
+/* line 24, ../../app/stylesheets/lunchtime.scss */
+.icon.bistro {
+  background-position: -64px 0px;
+}
+/* line 25, ../../app/stylesheets/lunchtime.scss */
+.icon.home {
+  background-position: -96px 0px;
+}
+/* line 27, ../../app/stylesheets/lunchtime.scss */
+.icon.health {
+  background-position: 0px -32px;
+}
+/* line 28, ../../app/stylesheets/lunchtime.scss */
+.icon.hummus {
+  background-position: -32px -32px;
+}
+/* line 29, ../../app/stylesheets/lunchtime.scss */
+.icon.asian {
+  background-position: -64px -32px;
+}
+/* line 30, ../../app/stylesheets/lunchtime.scss */
+.icon.delivery {
+  background-position: -96px -32px;
+}

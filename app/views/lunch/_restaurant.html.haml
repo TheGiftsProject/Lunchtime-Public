@@ -1,0 +1,11 @@
+- if defined? link
+  %li.restaurant.arrow
+    %a{:href=>link}
+      .icon{:class=>restaurant.tags.map{|t| t.name}.join(" ")}
+      %span=restaurant.name
+- else
+  %li.restaurant
+    .icon{:class=>restaurant.tags.map{|t| t.name}.join(" ")}
+    %span=restaurant.name
+    - if defined? count
+      %small.counter!=count

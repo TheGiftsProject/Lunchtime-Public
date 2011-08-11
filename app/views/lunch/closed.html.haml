@@ -1,0 +1,21 @@
+#closed
+  != render :partial=>"toolbar"
+  %ul
+    %li
+      %p!=t("lunch_closed")
+      %br
+      %p!=t("winning_restaurant")
+    != render :partial=>"restaurant",:object=>@lunch.chosen_restaurant,:locals=>{:count=>@lunch.chosen_restaurant_count}
+
+  - unless @lunch.solico_votes.empty?
+    %ul
+      %li!=t("they_not_eating",:count=>@lunch.solico_votes.count)
+      - @lunch.solico_votes.each do |vote|
+        %li!= vote.user.name
+
+  .info
+    %p
+      != t("closed.info")
+      %br
+      != t("closed.contact")
+      %a{:href=>"mailto://#{t("closed.mail")}"}!=t("closed.mail")

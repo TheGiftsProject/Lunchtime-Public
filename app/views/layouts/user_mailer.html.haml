@@ -1,0 +1,6 @@
+%h2 Lunch Time
+%p
+  != "Hey #{@user.name.split(" ").first},"
+  %br
+  != yield
+  %a{:href=>action_url(@user.company.url,:token=>@user.token)} link

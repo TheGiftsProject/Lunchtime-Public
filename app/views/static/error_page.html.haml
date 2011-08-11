@@ -1,0 +1,5 @@
+.div{:id=>@_action_name}
+  != render :partial=>"lunch/toolbar"
+  .info
+    %p
+      != t("error_msg",:scope=>@_action_name)

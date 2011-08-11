@@ -1,0 +1,22 @@
+!!! 5
+%html
+  %head
+    != yield :stylesheets
+    != stylesheet_link_tag "lunchtime","token-input-facebook"
+    != javascript_include_tag "https://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js"
+    != javascript_include_tag  "jquery.tokeninput"
+    %title Lunch Time
+    %link{:rel => "apple-touch-icon", :href => "/images/iphone-logo.png"}
+  %body
+    != yield
+    :javascript
+      $().ready(function(){
+        $('#restaurant_tag_tokens').tokenInput('/tags.json', {
+        crossDomain: false,
+        prePopulate: $('#restaurant_tag_tokens').data('pre'),
+        theme: 'facebook'
+         });
+      });
+    != yield :scripts
+
+

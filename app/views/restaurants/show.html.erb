@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <div style="float:left;margin-right:20px;" class="icon <%= @restaurant.tags.map(&:name).join(" ") %>"></div>
+  <b>Name:</b>
+  <%= @restaurant.name %>
+  <br/>
+  <b>tags: </b>
+  <%= @restaurant.tags.map(&:name).to_sentence %>
+</p>
+
+
+<%= link_to 'Edit', edit_restaurant_path(@restaurant) %> |
+<%= link_to 'Back', restaurants_path %>

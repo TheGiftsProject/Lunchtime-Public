@@ -1,0 +1,12 @@
+#waiting
+  != render :partial=>"toolbar"
+  .info
+    %p
+      !=t('waiting_for_lunch')
+      %br
+      !=t('voting_will_open')
+  - if @user.admin?
+    %ul
+      %li.arrow
+        %a{:href=>open_lunch_path}
+          != t("open_lunch")

@@ -1,0 +1,34 @@
+# Sample localization file for English. Add more files in this directory for other locales.
+# See http://github.com/svenfuchs/rails-i18n/tree/master/rails%2Flocale for starting points.
+
+en:
+  lunch_time_for: "Lunch Time"
+  welcome_user: "Welcome %{user},"
+  you_voted_for: "You voted for"
+  winning_restaurant: "The winning restaurant is"
+  lunch_closed: "The Lunch Vote is closed"
+  waiting_for_lunch: "Waiting for lunch"
+  voting_will_open: "Voting will open at 11:00"
+  you_solico: "You're not eating with us today"
+  they_not_eating:
+    one: "This person isn't eating with everyone"
+    other: "These people aren't eating with everyone"
+  were_still_waiting: "We're still waiting for some people to vote..."
+  not_eating: "Not eating"
+  voting_as: "You're voting as %{user}"
+  open_lunch: "Start a Vote"
+  close_lunch: "Close this Vote"
+  closed:
+    info: "Lunch Time is brought to you by The Gifts Project"
+    contact: "For any comments or suggestions contact us at "
+    mail: "lunchtime@giftsproject.com"
+  no_user:
+    error_msg: "You can't use Lunch Time without a user, please contact your company's admin"
+  no_admin:
+    error_msg: "You can't use this page if you're not an admin"
+  no_site:
+    error_msg: "You've typed the URL wrong, there is no company by this name"
+
+  welcome:
+    welcome_to_lunchtime: "Welcome to Lunch Time the application where you finally decide on a place to eat"
+    contact_admin: "If you can't find the vote contact your admin"
